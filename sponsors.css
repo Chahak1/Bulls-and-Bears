@@ -1,0 +1,103 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%) ;
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --textColor: hsl(240, 4%, 36%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%), hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: linear-gradient(rgba(133, 84, 40, 1),rgba(40, 84, 0, 4));
+  --cardBG: rgb(225,225,235);
+  --cardHover: rgb(225,225,205);
+}
+
+.sponsors {
+  width: 100%;
+}
+.sponsors .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1rem 0;
+  z-index: 2;
+  color: var(--whiteColor);
+  align-items: center;
+  font-size: 4rem;
+}
+.sponsors .secTitle .title h1 {
+  color: var(--whiteColor);
+  align-items: center;
+  font-size: 4rem;
+}
+.sponsors .secTitle .title::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.sponsors .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.sponsors .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: linear-gradient(rgba(133, 12, 12, 0.97), rgb(17, 66, 0));
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(21, 21, 59, 0.873);
+  overflow: hidden;
+}
+.sponsors .secContent .singleDestination:hover {
+  background: linear-gradient(rgb(133, 84, 40), rgb(40, 84, 0));
+  box-shadow: 1px 4px 4px rgba(85, 85, 114, 0.549);
+  transform: 0.3s ease;
+}
+.sponsors .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.sponsors .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.sponsors .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.sponsors .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=sponsors.css.map */
