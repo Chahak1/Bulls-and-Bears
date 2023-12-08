@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react'
 import './main.css'
-import img from '../../pictures/img.png' 
-import img2 from '../../pictures/img2.png' 
+import img from '../../pictures/cashflow.jpg' 
+import img2 from '../../pictures/fintalk.jpg' 
 import img3 from '../../pictures/img3.png' 
-import img4 from '../../pictures/img4.png' 
+import event1 from '../../pictures/event1.jpeg' 
 import img5 from '../../pictures/img5.png' 
 import img6 from '../../pictures/img6.png' 
 import Aos from 'aos'
@@ -34,7 +34,7 @@ const Data = [
 },
 {
   id:4,
-  imgSrc: img4,
+  imgSrc: event1,
   destTitle: 'TRADERS ELITE',
   description: 'A trading contest where traders discovered their true potential in the thrilling 6-Hour Real-Time Stock Trading challenge and honed their skills using virtual money.'
 },
